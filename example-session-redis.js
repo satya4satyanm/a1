@@ -4,10 +4,10 @@ const fetch = require("node-fetch");
 const session = require('express-session');
 var process = require('process');
 const redisClient = redis.createClient({
-    host: 'redis-16565.c11.us-east-1-2.ec2.cloud.redislabs.com',
-    port: 16565
+    host: 'redis-18134.c11.us-east-1-2.ec2.cloud.redislabs.com',
+    port: 18134
 });
-redisClient.AUTH("Hsvnkvc1g9LJTmM1JUl7DR3LqpSq9J5W");
+redisClient.AUTH("zLuurFq1Qi8YgZ232xOLJNYmcKZ6EVi8");
 const redisStore = require('connect-redis')(session);
 const app = express();
 
@@ -26,8 +26,8 @@ app.use(session({
         secure: false
     }, // Note that the cookie-parser module is no longer needed
     store: new redisStore({
-        host: 'redis-16565.c11.us-east-1-2.ec2.cloud.redislabs.com',
-        port: 16565,
+        host: 'redis-18134.c11.us-east-1-2.ec2.cloud.redislabs.com',
+        port: 18134,
         client: redisClient,
         ttl: 86400
     }),
