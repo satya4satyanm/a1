@@ -18,7 +18,7 @@
     "connect-redis": "^3.4.2",
     "express": "^4.17.1",
     "express-session": "^1.16.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "redis": "^2.8.0"
   }
 }
